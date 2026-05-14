@@ -50,8 +50,9 @@ function Index() {
       className="min-h-screen bg-background text-foreground selection:bg-accent/20"
       style={{ fontFamily: "var(--font-sans)" }}
     >
-      {/* Nav — light, logo-led */}
-      <nav className="max-w-6xl mx-auto px-6 sm:px-8 pt-6 pb-2 flex justify-between items-center">
+      {/* Nav — light, logo-led, sticky */}
+      <div className="sticky top-0 z-40 bg-background/85 backdrop-blur-md border-b border-border/60">
+      <nav className="max-w-6xl mx-auto px-6 sm:px-8 py-4 flex justify-between items-center">
         <a href="/" className="flex items-center gap-3 group" aria-label="Hanson Strategies — home">
           <img
             src={logoMark}
@@ -65,7 +66,7 @@ function Index() {
             Hanson Strategies
           </span>
         </a>
-        <div className="flex gap-8 items-center text-sm">
+        <div className="flex gap-8 items-center text-base" style={{ fontFamily: "var(--font-serif)", fontWeight: 400 }}>
           <a
             href="https://www.linkedin.com/in/jenhanson"
             target="_blank"
@@ -82,6 +83,8 @@ function Index() {
           </a>
         </div>
       </nav>
+      </div>
+
 
       {/* Hero */}
       <header className="max-w-6xl mx-auto px-6 sm:px-8 pt-8 sm:pt-12 pb-20 sm:pb-28">
@@ -114,7 +117,7 @@ function Index() {
             </p>
             <a
               href="mailto:jen@hansonstrategiesllc.com"
-              className="inline-flex items-center gap-2 bg-foreground text-background px-7 py-3.5 rounded-full text-sm font-medium tracking-wide hover:bg-accent transition-colors"
+              className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-7 py-3.5 rounded-full text-sm font-medium tracking-wide hover:bg-accent/90 transition-colors"
             >
               Start a conversation
               <span aria-hidden>→</span>
@@ -133,9 +136,9 @@ function Index() {
                   style={{
                     objectPosition: "center top",
                     WebkitMaskImage:
-                      "linear-gradient(to bottom, black 70%, transparent 100%)",
+                      "linear-gradient(to bottom, black 90%, transparent 100%)",
                     maskImage:
-                      "linear-gradient(to bottom, black 70%, transparent 100%)",
+                      "linear-gradient(to bottom, black 90%, transparent 100%)",
                   }}
                 />
               </div>
