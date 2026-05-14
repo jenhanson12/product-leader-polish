@@ -94,11 +94,14 @@ function Index() {
               </span>
             </div>
             <h1
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight mb-8 text-balance"
+              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight mb-8 text-balance max-w-[18ch]"
               style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
             >
               Turning{" "}
-              <span className="italic" style={{ color: "var(--accent)" }}>
+              <span
+                className="italic whitespace-nowrap"
+                style={{ color: "var(--accent)" }}
+              >
                 early-stage chaos
               </span>{" "}
               into production-ready products.
@@ -118,22 +121,29 @@ function Index() {
             </a>
           </div>
 
-          {/* Smaller, uncropped headshot with soft fade */}
+          {/* Smaller headshot with soft fade + caption rule */}
           <div className="lg:col-span-5 order-1 lg:order-2 flex justify-center lg:justify-end">
-            <div className="relative w-[220px] sm:w-[260px] lg:w-[320px]">
+            <div className="relative w-[220px] sm:w-[260px] lg:w-[300px]">
               <div className="aspect-[4/5] rounded-2xl bg-[var(--surface)] overflow-hidden">
                 <img
                   src={jenPortrait}
                   alt="Jen Hanson, fractional product and AI leader"
                   loading="eager"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover"
                   style={{
+                    objectPosition: "center top",
                     WebkitMaskImage:
-                      "linear-gradient(to bottom, black 78%, transparent 100%)",
+                      "linear-gradient(to bottom, black 70%, transparent 100%)",
                     maskImage:
-                      "linear-gradient(to bottom, black 78%, transparent 100%)",
+                      "linear-gradient(to bottom, black 70%, transparent 100%)",
                   }}
                 />
+              </div>
+              <div className="mt-5 flex items-center gap-3">
+                <span className="w-6 h-px bg-accent/60" />
+                <span className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
+                  Boulder, Colorado
+                </span>
               </div>
             </div>
           </div>
