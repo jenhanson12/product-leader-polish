@@ -66,7 +66,7 @@ function Index() {
             Hanson Strategies
           </span>
         </a>
-        <div className="flex gap-8 items-center text-sm">
+        <div className="flex gap-8 items-center text-base" style={{ fontFamily: "var(--font-serif)", fontWeight: 400 }}>
           <a
             href="https://www.linkedin.com/in/jenhanson"
             target="_blank"
@@ -83,6 +83,8 @@ function Index() {
           </a>
         </div>
       </nav>
+      </div>
+
 
       {/* Hero */}
       <header className="max-w-6xl mx-auto px-6 sm:px-8 pt-8 sm:pt-12 pb-20 sm:pb-28">
