@@ -94,11 +94,14 @@ function Index() {
               </span>
             </div>
             <h1
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight mb-8 text-balance"
+              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight mb-8 text-balance max-w-[18ch]"
               style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
             >
               Turning{" "}
-              <span className="italic" style={{ color: "var(--accent)" }}>
+              <span
+                className="italic whitespace-nowrap"
+                style={{ color: "var(--accent)" }}
+              >
                 early-stage chaos
               </span>{" "}
               into production-ready products.
@@ -118,22 +121,29 @@ function Index() {
             </a>
           </div>
 
-          {/* Smaller, uncropped headshot with soft fade */}
+          {/* Smaller headshot with soft fade + caption rule */}
           <div className="lg:col-span-5 order-1 lg:order-2 flex justify-center lg:justify-end">
-            <div className="relative w-[220px] sm:w-[260px] lg:w-[320px]">
+            <div className="relative w-[220px] sm:w-[260px] lg:w-[300px]">
               <div className="aspect-[4/5] rounded-2xl bg-[var(--surface)] overflow-hidden">
                 <img
                   src={jenPortrait}
                   alt="Jen Hanson, fractional product and AI leader"
                   loading="eager"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover"
                   style={{
+                    objectPosition: "center top",
                     WebkitMaskImage:
-                      "linear-gradient(to bottom, black 78%, transparent 100%)",
+                      "linear-gradient(to bottom, black 70%, transparent 100%)",
                     maskImage:
-                      "linear-gradient(to bottom, black 78%, transparent 100%)",
+                      "linear-gradient(to bottom, black 70%, transparent 100%)",
                   }}
                 />
+              </div>
+              <div className="mt-5 flex items-center gap-3">
+                <span className="w-6 h-px bg-accent/60" />
+                <span className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
+                  Boulder, Colorado
+                </span>
               </div>
             </div>
           </div>
@@ -141,7 +151,7 @@ function Index() {
       </header>
 
       {/* Why founders hire me */}
-      <section className="bg-[var(--surface)] py-24 sm:py-32">
+      <section className="bg-[var(--surface)] border-y border-border/60 py-24 sm:py-32">
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
           <div className="max-w-2xl mb-16 sm:mb-20">
             <p className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent mb-5">
@@ -196,6 +206,14 @@ function Index() {
             <p className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent">
               Community &amp; Speaking
             </p>
+            <div className="hidden lg:block mt-8 pl-0 border-l-2 border-accent/40 pl-5">
+              <p
+                className="italic text-xl text-muted-foreground leading-snug"
+                style={{ fontFamily: "var(--font-serif)" }}
+              >
+                Showing up where founders &amp; builders gather.
+              </p>
+            </div>
           </div>
           <div className="lg:col-span-8">
             <h2
@@ -226,7 +244,7 @@ function Index() {
       </section>
 
       {/* Contact */}
-      <section className="bg-[var(--surface)] py-24 sm:py-32">
+      <section className="bg-[var(--surface)] border-y border-border/60 py-24 sm:py-32">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
           <p className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent mb-5">
             Let's talk
@@ -247,7 +265,7 @@ function Index() {
           </p>
           <a
             href="mailto:jen@hansonstrategiesllc.com"
-            className="inline-block text-xl sm:text-2xl italic text-foreground hover:text-accent transition-colors underline decoration-accent/40 underline-offset-[6px] hover:decoration-accent"
+            className="inline-block text-xl sm:text-2xl italic text-foreground hover:text-accent transition-colors border-b border-accent/30 hover:border-accent pb-1"
             style={{ fontFamily: "var(--font-serif)" }}
           >
             jen@hansonstrategiesllc.com
@@ -258,16 +276,19 @@ function Index() {
       {/* Footer */}
       <footer className="border-t border-border">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p
-            className="text-sm italic"
-            style={{ fontFamily: "var(--font-serif)" }}
-          >
-            Jen Hanson
-            <span className="text-muted-foreground not-italic">
-              {" "}
-              · Founder, Hanson Strategies LLC
-            </span>
-          </p>
+          <div className="flex items-center gap-3">
+            <img src={logoMark} alt="" className="h-7 w-auto opacity-80" />
+            <p
+              className="text-sm italic"
+              style={{ fontFamily: "var(--font-serif)" }}
+            >
+              Jen Hanson
+              <span className="text-muted-foreground not-italic">
+                {" "}
+                · Founder, Hanson Strategies LLC
+              </span>
+            </p>
+          </div>
           <p className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
             © {new Date().getFullYear()} Hanson Strategies LLC
           </p>
