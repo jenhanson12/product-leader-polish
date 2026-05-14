@@ -86,7 +86,7 @@ function Index() {
       {/* Hero */}
       <header className="max-w-6xl mx-auto px-6 sm:px-8 pt-8 sm:pt-12 pb-20 sm:pb-28">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-          <div className="lg:col-span-7 order-2 lg:order-1">
+          <div className="lg:col-span-7">
             <div className="flex items-center gap-3 mb-8">
               <span className="w-8 h-px bg-accent" />
               <span className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent">
@@ -122,7 +122,7 @@ function Index() {
           </div>
 
           {/* Smaller headshot with soft fade + caption rule */}
-          <div className="lg:col-span-5 order-1 lg:order-2 flex justify-center lg:justify-end">
+          <div className="lg:col-span-5 flex justify-center lg:justify-end">
             <div className="relative w-[220px] sm:w-[260px] lg:w-[300px]">
               <div className="aspect-[4/5] rounded-2xl bg-[var(--surface)] overflow-hidden">
                 <img
@@ -138,12 +138,6 @@ function Index() {
                       "linear-gradient(to bottom, black 70%, transparent 100%)",
                   }}
                 />
-              </div>
-              <div className="mt-5 flex items-center gap-3">
-                <span className="w-6 h-px bg-accent/60" />
-                <span className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
-                  Boulder, Colorado
-                </span>
               </div>
             </div>
           </div>
