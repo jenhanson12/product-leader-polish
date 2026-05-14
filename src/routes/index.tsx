@@ -125,8 +125,8 @@ function Index() {
           </div>
 
           {/* Smaller headshot with soft fade + caption rule */}
-          <div className="lg:col-span-5 flex justify-center lg:justify-end">
-            <div className="relative w-[220px] sm:w-[260px] lg:w-[300px]">
+          <div className="lg:col-span-5 flex justify-center lg:justify-end mt-4 lg:mt-0">
+            <div className="relative w-[170px] sm:w-[220px] lg:w-[300px]">
               <div className="aspect-[4/5] rounded-2xl bg-[var(--surface)] overflow-hidden">
                 <img
                   src={jenPortrait}
