@@ -51,8 +51,8 @@ function Index() {
       style={{ fontFamily: "var(--font-sans)" }}
     >
       {/* Nav — light, logo-led, sticky */}
-      <div className="sticky top-0 z-40 bg-background/85 backdrop-blur-md border-b border-border/60">
-      <nav className="max-w-6xl mx-auto px-6 sm:px-8 py-4 flex justify-between items-center">
+      <div className="sticky top-0 z-40 bg-background sm:bg-background/85 sm:backdrop-blur-md border-b border-border/60">
+      <nav className="max-w-6xl mx-auto px-6 sm:px-8 py-3 sm:py-4 flex justify-between items-center">
         <a href="/" className="flex items-center gap-3 group" aria-label="Hanson Strategies — home">
           <img
             src={logoMark}
@@ -66,7 +66,7 @@ function Index() {
             Hanson Strategies
           </span>
         </a>
-        <div className="flex gap-8 items-center text-base" style={{ fontFamily: "var(--font-serif)", fontWeight: 400 }}>
+        <div className="flex gap-5 sm:gap-8 items-center text-sm sm:text-base" style={{ fontFamily: "var(--font-serif)", fontWeight: 400 }}>
           <a
             href="https://www.linkedin.com/in/jenhanson"
             target="_blank"
@@ -87,7 +87,7 @@ function Index() {
 
 
       {/* Hero */}
-      <header className="max-w-6xl mx-auto px-6 sm:px-8 pt-8 sm:pt-12 pb-20 sm:pb-28">
+      <header className="max-w-6xl mx-auto px-6 sm:px-8 pt-6 sm:pt-12 pb-20 sm:pb-28">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <div className="lg:col-span-7">
             <div className="flex items-center gap-3 mb-8">
@@ -97,7 +97,7 @@ function Index() {
               </span>
             </div>
             <h1
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight mb-8 text-balance max-w-[18ch]"
+              className="text-[2rem] sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight mb-8 text-balance max-w-none sm:max-w-[18ch]"
               style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
             >
               Turning{" "}
@@ -125,8 +125,8 @@ function Index() {
           </div>
 
           {/* Smaller headshot with soft fade + caption rule */}
-          <div className="lg:col-span-5 flex justify-center lg:justify-end">
-            <div className="relative w-[220px] sm:w-[260px] lg:w-[300px]">
+          <div className="lg:col-span-5 flex justify-center lg:justify-end mt-4 lg:mt-0">
+            <div className="relative w-[170px] sm:w-[220px] lg:w-[300px]">
               <div className="aspect-[4/5] rounded-2xl bg-[var(--surface)] overflow-hidden">
                 <img
                   src={jenPortrait}
