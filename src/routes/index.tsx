@@ -51,8 +51,8 @@ function Index() {
       style={{ fontFamily: "var(--font-sans)" }}
     >
       {/* Nav — light, logo-led, sticky */}
-      <div className="sticky top-0 z-40 bg-background/85 backdrop-blur-md border-b border-border/60">
-      <nav className="max-w-6xl mx-auto px-6 sm:px-8 py-4 flex justify-between items-center">
+      <div className="sticky top-0 z-40 bg-background sm:bg-background/85 sm:backdrop-blur-md border-b border-border/60">
+      <nav className="max-w-6xl mx-auto px-6 sm:px-8 py-3 sm:py-4 flex justify-between items-center">
         <a href="/" className="flex items-center gap-3 group" aria-label="Hanson Strategies — home">
           <img
             src={logoMark}
