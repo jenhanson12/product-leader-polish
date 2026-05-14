@@ -1,40 +1,25 @@
-# Designer's critique
+## Changes
 
-Looking at the live page (full-page screenshot), here's what I'd change. None of this touches your content or adds new sections.
+All edits in `src/routes/index.tsx` (one small token tweak possible in `src/styles.css` if needed).
 
-## 1. The headshot isn't rendering (must-fix)
-The portrait container is showing as an empty cream rectangle. The image file exists but `object-contain` on a transparent/white-background portrait inside a cream box can render as "nothing visible." I'll verify the asset and switch to `object-cover` with `object-position: top` so your face anchors high in the frame and the soft fade still hides the bottom edge — no cropping of your face, just the shoulders/background fading out.
+### 1. Reduce headshot fade
+In the hero portrait, change the mask gradient from `black 70% → transparent 100%` to something gentler like `black 88% → transparent 100%` so only the very bottom edge softens instead of a long white wash.
 
-## 2. Hero headline wraps awkwardly
-"Turning *early-stage chaos*" currently breaks mid-word ("early-" / "stage chaos") because the italic accent forces a line break on a hyphenated word. Two small fixes:
-- Add `whitespace-nowrap` to the italic span so "early-stage chaos" stays together
-- Slightly reduce the headline's max-width so the natural break lands after "chaos" — gives the line a calmer rhythm
+### 2. Soften the "Start a conversation" button
+Currently `bg-foreground text-background` (near-black on cream). Switch to the warm terracotta accent for cohesion with the rest of the palette:
+- `bg-accent text-accent-foreground hover:bg-accent/90`
+- Keeps the rounded pill, same size, same arrow.
 
-## 3. Hero is left-heavy, portrait feels stranded
-Right now the headline + body + CTA stack on the left and the portrait floats alone on the right with a lot of air around it. I'd:
-- Add a thin horizontal accent rule + small caption under the portrait ("Boulder, CO" or "Fractional Product Leader") so the right column has typographic weight matching the left
-- Pull the portrait slightly down so its visual center aligns with the headline's center, not the top
+### 3. Nav links use the serif logo font
+"LinkedIn" and "Get in touch" (nav) currently inherit Inter sans. Apply `font-family: var(--font-serif)` to both, matching the "Hanson Strategies" wordmark. Slight size bump (text-base) and lighter weight so they read as editorial, not utilitarian.
 
-## 4. "Community & Speaking" left column is empty
-The label sits alone with a huge empty column beside it. I'll add a small italic serif pull-quote or a thin vertical accent rule under the label to give that column presence — no new content, just visual weight.
+### 4. Sticky nav
+Wrap the `<nav>` in a sticky container:
+- `sticky top-0 z-40 bg-background/85 backdrop-blur-md`
+- Keep existing inner `max-w-6xl` layout untouched.
 
-## 5. Email link in CTA is too heavy
-The wavy underline + italic serif on `jen@hansonstrategiesllc.com` competes with the headline above it. I'll switch to a thinner underline-offset treatment (or a subtle hover-only underline) so the headline stays the hero of that section.
+### 5. Subtle nav separator
+Add `border-b border-border/60` to the sticky nav wrapper so there's a hairline between nav and page content. The translucent background + blur also creates a subtle shade shift on scroll.
 
-## 6. Section transitions are too abrupt
-The cream → surface → cream → surface bands snap hard. I'll add a hairline border or 1px rule between bands (in the warm border color you already have) so the transitions feel intentional rather than stripey.
-
-## 7. Footer is sparse
-Add the small "HS" logo mark next to "Jen Hanson" in the footer for brand bookending — mirrors the nav and feels finished.
-
-## What I'm NOT changing
-- Your copy (every word stays)
-- Section structure or order
-- Color palette or fonts
-- The headshot fade effect (you said you like it)
-
-## Technical notes
-- Files touched: `src/routes/index.tsx` only
-- Headshot fix: change `object-contain` → `object-cover` + `object-position: top center`, verify `src/assets/jen-portrait.png` loads
-- All changes use existing design tokens (`--accent`, `--border`, `--muted-foreground`, `--font-serif`)
-- No new dependencies, no new sections, no content changes
+## What's NOT changing
+- Copy, sections, structure, fonts beyond the nav links, color tokens, headshot image, fade direction (just shorter), or any other section.
