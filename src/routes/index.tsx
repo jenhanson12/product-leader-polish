@@ -276,16 +276,19 @@ function Index() {
       {/* Footer */}
       <footer className="border-t border-border">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p
-            className="text-sm italic"
-            style={{ fontFamily: "var(--font-serif)" }}
-          >
-            Jen Hanson
-            <span className="text-muted-foreground not-italic">
-              {" "}
-              · Founder, Hanson Strategies LLC
-            </span>
-          </p>
+          <div className="flex items-center gap-3">
+            <img src={logoMark} alt="" className="h-7 w-auto opacity-80" />
+            <p
+              className="text-sm italic"
+              style={{ fontFamily: "var(--font-serif)" }}
+            >
+              Jen Hanson
+              <span className="text-muted-foreground not-italic">
+                {" "}
+                · Founder, Hanson Strategies LLC
+              </span>
+            </p>
+          </div>
           <p className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
             © {new Date().getFullYear()} Hanson Strategies LLC
           </p>
