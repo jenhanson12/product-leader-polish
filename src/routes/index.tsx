@@ -60,7 +60,7 @@ function Index() {
           />
           <span
             className="hidden sm:inline text-sm tracking-[0.28em] uppercase text-muted-foreground group-hover:text-foreground transition-colors"
-            style={{ fontFamily: "var(--font-sans)", fontWeight: 400 }}
+            style={{ fontFamily: "var(--font-sans)", fontWeight: 300 }}
           >
             Hanson Strategies
           </span>
@@ -95,7 +95,7 @@ function Index() {
             </div>
             <h1
               className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight mb-8 text-balance"
-              style={{ fontFamily: "var(--font-serif)", fontWeight: 400 }}
+              style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
             >
               Turning{" "}
               <span className="italic" style={{ color: "var(--accent)" }}>
@@ -149,7 +149,7 @@ function Index() {
             </p>
             <h2
               className="text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight"
-              style={{ fontFamily: "var(--font-serif)", fontWeight: 400 }}
+              style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
             >
               Senior product thinking.{" "}
               <span className="italic" style={{ color: "var(--accent)" }}>
@@ -177,7 +177,7 @@ function Index() {
                 <div>
                   <h3
                     className="text-xl sm:text-2xl mb-3 tracking-tight"
-                    style={{ fontFamily: "var(--font-serif)", fontWeight: 500 }}
+                    style={{ fontFamily: "var(--font-serif)", fontWeight: 400 }}
                   >
                     {vp.title}
                   </h3>
@@ -200,7 +200,7 @@ function Index() {
           <div className="lg:col-span-8">
             <h2
               className="text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-8"
-              style={{ fontFamily: "var(--font-serif)", fontWeight: 400 }}
+              style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
             >
               Active in the local{" "}
               <span className="italic" style={{ color: "var(--accent)" }}>
@@ -233,7 +233,7 @@ function Index() {
           </p>
           <h2
             className="text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight mb-8"
-            style={{ fontFamily: "var(--font-serif)", fontWeight: 400 }}
+            style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
           >
             Working on something{" "}
             <span className="italic" style={{ color: "var(--accent)" }}>
