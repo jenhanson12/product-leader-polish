@@ -1,26 +1,271 @@
 import { createFileRoute } from "@tanstack/react-router";
+import jenPortrait from "@/assets/jen-portrait.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Jen Hanson — Fractional Product & AI Leadership" },
+      {
+        name: "description",
+        content:
+          "Jen Hanson is a fractional product leader who embeds with startup teams to turn early-stage chaos into production-ready products.",
+      },
+      { property: "og:title", content: "Jen Hanson — Fractional Product & AI Leadership" },
+      {
+        property: "og:description",
+        content:
+          "Senior product thinking with operator instincts. Bridging strategy and execution for early-stage startups.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
+const VALUE_PROPS = [
+  {
+    title: "Force Multiplier, Not Overhead",
+    body: "I absorb execution across product, ops, and AI strategy so CEOs can focus on growth. I take ownership of whatever the team needs — from roadmap to release to tooling setup.",
+  },
+  {
+    title: "AI-Native Product Leadership",
+    body: "I've driven AI-powered MVPs to production-ready products from inside the team. I know how to scope, build, and ship with AI — not just recommend it.",
+  },
+  {
+    title: "Cross-Functional Glue",
+    body: "I serve as the connective tissue between leadership, engineering, and design — cutting through ambiguity, surfacing priorities, and keeping everyone moving in the same direction.",
+  },
+  {
+    title: "Operator Depth Across Stages",
+    body: "From B2B pivots and consumer app launches to enterprise platforms and AI tooling — I've navigated complex product decisions across industries and company stages.",
+  },
+];
 
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <div
+      className="min-h-screen bg-background text-foreground selection:bg-accent/20"
+      style={{ fontFamily: "var(--font-sans)" }}
+    >
+      {/* Nav */}
+      <nav className="max-w-6xl mx-auto px-6 sm:px-8 py-8 flex justify-between items-center">
+        <a
+          href="/"
+          className="text-lg sm:text-xl font-semibold tracking-tight italic"
+          style={{ fontFamily: "var(--font-serif)" }}
+        >
+          Hanson Strategies
+        </a>
+        <div className="flex gap-6 sm:gap-8 items-center text-sm">
+          <a
+            href="https://www.linkedin.com/in/jenhanson"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-accent transition-colors"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="mailto:jen@hansonstrategiesllc.com"
+            className="bg-foreground text-background px-4 py-2 rounded-full hover:bg-accent transition-colors text-xs sm:text-sm font-medium tracking-wide"
+          >
+            Get in touch
+          </a>
+        </div>
+      </nav>
+
+      {/* Hero */}
+      <header className="max-w-6xl mx-auto px-6 sm:px-8 pt-8 sm:pt-12 pb-20 sm:pb-28">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="lg:col-span-7 order-2 lg:order-1">
+            <div className="flex items-center gap-3 mb-8">
+              <span className="w-8 h-px bg-accent" />
+              <span className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent">
+                Fractional Product &amp; AI Leadership
+              </span>
+            </div>
+            <h1
+              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight mb-8 text-balance"
+              style={{ fontFamily: "var(--font-serif)", fontWeight: 400 }}
+            >
+              Turning{" "}
+              <span className="italic" style={{ color: "var(--accent)" }}>
+                early-stage chaos
+              </span>{" "}
+              into production-ready products.
+            </h1>
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-xl mb-10">
+              I embed with startup teams as a{" "}
+              <span className="text-foreground font-medium">senior product leader and operator</span>{" "}
+              — bridging strategy and execution so founders can focus on growth instead of getting
+              stuck in it.
+            </p>
+            <a
+              href="mailto:jen@hansonstrategiesllc.com"
+              className="inline-flex items-center gap-2 bg-foreground text-background px-7 py-3.5 rounded-full text-sm font-medium tracking-wide hover:bg-accent transition-colors"
+            >
+              Start a conversation
+              <span aria-hidden>→</span>
+            </a>
+          </div>
+
+          {/* Smaller, uncropped headshot with soft fade */}
+          <div className="lg:col-span-5 order-1 lg:order-2 flex justify-center lg:justify-end">
+            <div className="relative w-[220px] sm:w-[260px] lg:w-[320px]">
+              <div className="aspect-[4/5] rounded-2xl bg-[var(--surface)] overflow-hidden">
+                <img
+                  src={jenPortrait}
+                  alt="Jen Hanson, fractional product and AI leader"
+                  loading="eager"
+                  className="w-full h-full object-contain"
+                  style={{
+                    WebkitMaskImage:
+                      "linear-gradient(to bottom, black 78%, transparent 100%)",
+                    maskImage:
+                      "linear-gradient(to bottom, black 78%, transparent 100%)",
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Why founders hire me */}
+      <section className="bg-[var(--surface)] py-24 sm:py-32">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          <div className="max-w-2xl mb-16 sm:mb-20">
+            <p className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent mb-5">
+              Why founders hire me
+            </p>
+            <h2
+              className="text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight"
+              style={{ fontFamily: "var(--font-serif)", fontWeight: 400 }}
+            >
+              Senior product thinking.{" "}
+              <span className="italic" style={{ color: "var(--accent)" }}>
+                Operator instincts.
+              </span>
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mt-6">
+              I'm brought in when a startup needs someone who can hold both the big picture and the
+              ground-level execution — not just advise from the sideline, but actually move things
+              forward. I reduce founder decision load without losing momentum, and I stay until
+              something works.
+            </p>
+          </div>
+
+          <ol className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-14">
+            {VALUE_PROPS.map((vp, i) => (
+              <li key={vp.title} className="flex gap-6">
+                <span
+                  className="text-2xl italic shrink-0 text-accent/70 leading-none pt-1"
+                  style={{ fontFamily: "var(--font-serif)" }}
+                  aria-hidden
+                >
+                  0{i + 1}
+                </span>
+                <div>
+                  <h3
+                    className="text-xl sm:text-2xl mb-3 tracking-tight"
+                    style={{ fontFamily: "var(--font-serif)", fontWeight: 500 }}
+                  >
+                    {vp.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">{vp.body}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* Community & Speaking */}
+      <section className="max-w-6xl mx-auto px-6 sm:px-8 py-24 sm:py-32">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+          <div className="lg:col-span-4">
+            <p className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent">
+              Community &amp; Speaking
+            </p>
+          </div>
+          <div className="lg:col-span-8">
+            <h2
+              className="text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-8"
+              style={{ fontFamily: "var(--font-serif)", fontWeight: 400 }}
+            >
+              Active in the local{" "}
+              <span className="italic" style={{ color: "var(--accent)" }}>
+                AI &amp; startup community.
+              </span>
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              I'm a regular at Boulder and Denver's AI and startup community events, as an attendee
+              and sometimes a speaker. I've spoken at Boulder Startup Week, the AI Impact Forum,
+              Denver AI, and Women in AI, and I co-organize{" "}
+              <a
+                href="https://meetup.com/meetup-group-ai-and-product"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground underline decoration-accent/40 underline-offset-4 hover:decoration-accent transition-colors"
+              >
+                AI &amp; Product
+              </a>
+              , a meetup for product people navigating the AI landscape.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section className="bg-[var(--surface)] py-24 sm:py-32">
+        <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
+          <p className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent mb-5">
+            Let's talk
+          </p>
+          <h2
+            className="text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight mb-8"
+            style={{ fontFamily: "var(--font-serif)", fontWeight: 400 }}
+          >
+            Working on something{" "}
+            <span className="italic" style={{ color: "var(--accent)" }}>
+              worth building?
+            </span>
+          </h2>
+          <p className="text-muted-foreground text-lg leading-relaxed mb-10">
+            I work with a small number of startups at a time so I can be genuinely useful. If you're
+            figuring out what to build, how to ship faster, or how to bring AI into your product —
+            reach out.
+          </p>
+          <a
+            href="mailto:jen@hansonstrategiesllc.com"
+            className="inline-block text-xl sm:text-2xl italic text-foreground hover:text-accent transition-colors underline decoration-accent/40 underline-offset-[6px] hover:decoration-accent"
+            style={{ fontFamily: "var(--font-serif)" }}
+          >
+            jen@hansonstrategiesllc.com
+          </a>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-border">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p
+            className="text-sm italic"
+            style={{ fontFamily: "var(--font-serif)" }}
+          >
+            Jen Hanson
+            <span className="text-muted-foreground not-italic">
+              {" "}
+              · Founder, Hanson Strategies LLC
+            </span>
+          </p>
+          <p className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
+            © {new Date().getFullYear()} Hanson Strategies LLC
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
 }
