@@ -265,7 +265,7 @@ function Index() {
           </p>
           <a
             href="mailto:jen@hansonstrategiesllc.com"
-            className="inline-block text-xl sm:text-2xl italic text-foreground hover:text-accent transition-colors underline decoration-accent/40 underline-offset-[6px] hover:decoration-accent"
+            className="inline-block text-xl sm:text-2xl italic text-foreground hover:text-accent transition-colors border-b border-accent/30 hover:border-accent pb-1"
             style={{ fontFamily: "var(--font-serif)" }}
           >
             jen@hansonstrategiesllc.com
