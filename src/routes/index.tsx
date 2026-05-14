@@ -206,6 +206,14 @@ function Index() {
             <p className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent">
               Community &amp; Speaking
             </p>
+            <div className="hidden lg:block mt-8 pl-0 border-l-2 border-accent/40 pl-5">
+              <p
+                className="italic text-xl text-muted-foreground leading-snug"
+                style={{ fontFamily: "var(--font-serif)" }}
+              >
+                Showing up where founders &amp; builders gather.
+              </p>
+            </div>
           </div>
           <div className="lg:col-span-8">
             <h2
