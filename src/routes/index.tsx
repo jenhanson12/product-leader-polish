@@ -117,7 +117,7 @@ function Index() {
             </p>
             <a
               href="mailto:jen@hansonstrategiesllc.com"
-              className="inline-flex items-center gap-2 bg-foreground text-background px-7 py-3.5 rounded-full text-sm font-medium tracking-wide hover:bg-accent transition-colors"
+              className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-7 py-3.5 rounded-full text-sm font-medium tracking-wide hover:bg-accent/90 transition-colors"
             >
               Start a conversation
               <span aria-hidden>→</span>
