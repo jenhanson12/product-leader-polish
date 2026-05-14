@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import jenPortrait from "@/assets/jen-portrait.png";
+import logoMark from "@/assets/hanson-logo.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -49,16 +50,22 @@ function Index() {
       className="min-h-screen bg-background text-foreground selection:bg-accent/20"
       style={{ fontFamily: "var(--font-sans)" }}
     >
-      {/* Nav */}
-      <nav className="max-w-6xl mx-auto px-6 sm:px-8 py-8 flex justify-between items-center">
-        <a
-          href="/"
-          className="text-lg sm:text-xl font-semibold tracking-tight italic"
-          style={{ fontFamily: "var(--font-serif)" }}
-        >
-          Hanson Strategies
+      {/* Nav — light, logo-led */}
+      <nav className="max-w-6xl mx-auto px-6 sm:px-8 pt-6 pb-2 flex justify-between items-center">
+        <a href="/" className="flex items-center gap-3 group" aria-label="Hanson Strategies — home">
+          <img
+            src={logoMark}
+            alt=""
+            className="h-10 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+          />
+          <span
+            className="hidden sm:inline text-sm tracking-[0.28em] uppercase text-muted-foreground group-hover:text-foreground transition-colors"
+            style={{ fontFamily: "var(--font-sans)", fontWeight: 400 }}
+          >
+            Hanson Strategies
+          </span>
         </a>
-        <div className="flex gap-6 sm:gap-8 items-center text-sm">
+        <div className="flex gap-8 items-center text-sm">
           <a
             href="https://www.linkedin.com/in/jenhanson"
             target="_blank"
@@ -69,7 +76,7 @@ function Index() {
           </a>
           <a
             href="mailto:jen@hansonstrategiesllc.com"
-            className="bg-foreground text-background px-4 py-2 rounded-full hover:bg-accent transition-colors text-xs sm:text-sm font-medium tracking-wide"
+            className="text-foreground hover:text-accent transition-colors border-b border-accent/40 hover:border-accent pb-0.5"
           >
             Get in touch
           </a>
