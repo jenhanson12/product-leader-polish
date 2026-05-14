@@ -86,7 +86,7 @@ function Index() {
       {/* Hero */}
       <header className="max-w-6xl mx-auto px-6 sm:px-8 pt-8 sm:pt-12 pb-20 sm:pb-28">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-          <div className="lg:col-span-7 order-2 lg:order-1">
+          <div className="lg:col-span-7">
             <div className="flex items-center gap-3 mb-8">
               <span className="w-8 h-px bg-accent" />
               <span className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent">
