@@ -136,9 +136,9 @@ function Index() {
                   style={{
                     objectPosition: "center top",
                     WebkitMaskImage:
-                      "linear-gradient(to bottom, black 70%, transparent 100%)",
+                      "linear-gradient(to bottom, black 90%, transparent 100%)",
                     maskImage:
-                      "linear-gradient(to bottom, black 70%, transparent 100%)",
+                      "linear-gradient(to bottom, black 90%, transparent 100%)",
                   }}
                 />
               </div>
