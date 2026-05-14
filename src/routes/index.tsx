@@ -66,7 +66,7 @@ function Index() {
             Hanson Strategies
           </span>
         </a>
-        <div className="flex gap-5 sm:gap-8 items-center text-sm sm:text-base" style={{ fontFamily: "var(--font-serif)", fontWeight: 400 }}>
+        <div className="flex gap-5 sm:gap-8 items-center text-xs sm:text-sm tracking-[0.28em] uppercase" style={{ fontFamily: "var(--font-sans)", fontWeight: 300 }}>
           <a
             href="https://www.linkedin.com/in/jenhanson"
             target="_blank"
