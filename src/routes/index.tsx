@@ -244,7 +244,7 @@ function Index() {
       </section>
 
       {/* Contact */}
-      <section className="bg-[var(--surface)] py-24 sm:py-32">
+      <section className="bg-[var(--surface)] border-y border-border/60 py-24 sm:py-32">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
           <p className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent mb-5">
             Let's talk
