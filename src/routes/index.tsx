@@ -87,7 +87,7 @@ function Index() {
 
 
       {/* Hero */}
-      <header className="max-w-6xl mx-auto px-6 sm:px-8 pt-8 sm:pt-12 pb-20 sm:pb-28">
+      <header className="max-w-6xl mx-auto px-6 sm:px-8 pt-6 sm:pt-12 pb-20 sm:pb-28">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <div className="lg:col-span-7">
             <div className="flex items-center gap-3 mb-8">
@@ -97,7 +97,7 @@ function Index() {
               </span>
             </div>
             <h1
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight mb-8 text-balance max-w-[18ch]"
+              className="text-[2rem] sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight mb-8 text-balance max-w-none sm:max-w-[18ch]"
               style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
             >
               Turning{" "}
