@@ -261,10 +261,10 @@ function Index() {
           </p>
           <a
             href="mailto:jen@hansonstrategiesllc.com"
-            className="inline-block text-xl sm:text-2xl italic text-foreground hover:text-accent transition-colors border-b border-accent/30 hover:border-accent pb-1"
-            style={{ fontFamily: "var(--font-serif)" }}
+            className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-7 py-3.5 rounded-full text-sm font-medium tracking-wide hover:bg-accent/90 transition-colors"
           >
-            jen@hansonstrategiesllc.com
+            Contact Jen
+            <span aria-hidden>→</span>
           </a>
         </div>
       </section>
