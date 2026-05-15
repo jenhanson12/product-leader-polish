@@ -32,7 +32,7 @@ const VALUE_PROPS = [
   },
   {
     title: "AI-Native Product Leadership",
-    body: "I've driven AI-powered MVPs to production-ready products from inside the team. I know how to scope, build, and ship with AI — not just recommend it.",
+    body: "I've driven AI-powered products from concept through scale from inside the team. I've scoped, built, and shipped with AI.",
   },
   {
     title: "Cross-Functional Glue",
