@@ -6,13 +6,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Jen Hanson — Fractional Product & AI Leadership" },
+      { title: "Hanson Strategies — Product Leadership" },
       {
         name: "description",
         content:
-          "Jen Hanson is a fractional product leader who embeds with startup teams to turn early-stage chaos into momentum that lasts.",
+          "Hanson Strategies is a fractional product leadership practice that embeds with startup teams to turn early-stage chaos into momentum that lasts.",
       },
-      { property: "og:title", content: "Jen Hanson — Fractional Product & AI Leadership" },
+      { property: "og:title", content: "Hanson Strategies — Product Leadership" },
       {
         property: "og:description",
         content:
