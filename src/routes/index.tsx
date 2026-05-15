@@ -250,9 +250,9 @@ function Index() {
             className="text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight mb-8"
             style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
           >
-            Working on something{" "}
+            Turning early-stage chaos into{" "}
             <span className="italic" style={{ color: "var(--accent)" }}>
-              worth building?
+              momentum that lasts.
             </span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-10">
