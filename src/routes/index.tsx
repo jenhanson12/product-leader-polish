@@ -165,9 +165,9 @@ function Index() {
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mt-6">
               I'm brought in when a startup needs someone who can hold both the big picture and the
-              ground-level execution — not just advise from the sideline, but actually move things
-              forward. I reduce founder decision load without losing momentum, and I stay until
-              something works.
+              ground-level execution. I don't just advise from the sideline - I'm hands-on and move
+              things forward. I reduce founder decision load without losing momentum, and I get
+              products and teams operational.
             </p>
           </div>
 
