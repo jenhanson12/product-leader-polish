@@ -40,7 +40,7 @@ const VALUE_PROPS = [
   },
   {
     title: "Operator Depth Across Stages",
-    body: "I've navigated complex product decisions across industries and company stages, from B2B pivots and consumer app launches to enterprise platforms and AI tooling.",
+    body: "I've navigated product decisions across B2B, B2C, and B2B2C models, in verticals including FinTech, AdTech, EdTech, and e-commerce, at every company stage.",
   },
 ];
 
