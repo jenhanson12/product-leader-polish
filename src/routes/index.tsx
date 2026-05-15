@@ -217,10 +217,10 @@ function Index() {
               className="text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-8"
               style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
             >
-              Active in the local{" "}
-              <span className="italic" style={{ color: "var(--accent)" }}>
-                AI &amp; startup community.
-              </span>
+            Active in the local{" "}
+            <span className="italic" style={{ color: "var(--accent)" }}>
+              AI &amp; startup communities.
+            </span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
               I'm a regular at Boulder and Denver's AI and startup community events, as an attendee
