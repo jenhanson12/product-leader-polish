@@ -36,7 +36,7 @@ const VALUE_PROPS = [
   },
   {
     title: "Cross-Functional Glue",
-    body: "I serve as the connective tissue between leadership, engineering, and design — cutting through ambiguity, surfacing priorities, and keeping everyone moving in the same direction.",
+    body: "I serve as the connective tissue between leadership, engineering, and design, cutting through ambiguity, surfacing priorities, and keeping everyone moving in the same direction.",
   },
   {
     title: "Operator Depth Across Stages",
