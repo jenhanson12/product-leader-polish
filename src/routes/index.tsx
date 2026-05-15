@@ -257,7 +257,7 @@ function Index() {
           <p className="text-muted-foreground text-lg leading-relaxed mb-10">
             I work with no more than a couple clients at a time so I can be genuinely useful. If you're
             figuring out what to build, how to ship faster, or how to build AI into your product,
-            let's talk.
+            let's have a conversation.
           </p>
           <a
             href="mailto:jen@hansonstrategiesllc.com"
