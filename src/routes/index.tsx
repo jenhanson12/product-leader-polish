@@ -10,7 +10,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Jen Hanson is a fractional product leader who embeds with startup teams to turn early-stage chaos into production-ready products.",
+          "Jen Hanson is a fractional product leader who embeds with startup teams to turn early-stage chaos into momentum that lasts.",
       },
       { property: "og:title", content: "Jen Hanson — Fractional Product & AI Leadership" },
       {
@@ -107,7 +107,7 @@ function Index() {
               >
                 early-stage chaos
               </span>{" "}
-              into production-ready products.
+              into momentum that lasts.
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-xl mb-10">
               I embed with startup teams as a{" "}
