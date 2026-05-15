@@ -218,7 +218,7 @@ function Index() {
             >
             Active in the local{" "}
             <span className="italic" style={{ color: "var(--accent)" }}>
-              AI &amp; startup communities.
+              AI &amp; startup community.
             </span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
