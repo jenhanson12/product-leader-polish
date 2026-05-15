@@ -68,7 +68,7 @@ function Index() {
         </a>
         <div className="flex gap-5 sm:gap-8 items-center text-xs sm:text-sm tracking-[0.28em] uppercase" style={{ fontFamily: "var(--font-sans)", fontWeight: 300 }}>
           <a
-            href="https://www.linkedin.com/in/jenhanson"
+            href="https://www.linkedin.com/in/jenhansonco/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-accent transition-colors"
