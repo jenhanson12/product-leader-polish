@@ -256,9 +256,10 @@ function Index() {
             </span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-10">
-            I work with a small number of startups at a time so I can be genuinely useful. If you're
-            figuring out what to build, how to ship faster, or how to bring AI into your product —
-            reach out.
+            I'm brought in when a startup needs someone who can hold both the big picture and the
+            ground-level execution - not just advise from the sideline, but actually move things
+            forward. I reduce founder decision load without losing momentum and get things running
+            smoothly and predictably.
           </p>
           <a
             href="mailto:jen@hansonstrategiesllc.com"
