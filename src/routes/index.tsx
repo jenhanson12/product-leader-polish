@@ -256,7 +256,7 @@ function Index() {
             </span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-10">
-            I work with a small number of startups at a time so I can be genuinely useful. If you're
+            I work with no more than a couple startups at a time so I can be genuinely useful. If you're
             figuring out what to build, how to ship faster, or how to bring AI into your product,
             let's talk.
           </p>
