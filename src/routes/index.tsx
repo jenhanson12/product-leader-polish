@@ -111,8 +111,8 @@ function Index() {
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-xl mb-10">
               I embed with startup teams as a{" "}
-              <span className="text-foreground font-medium">senior product leader and operator</span>{" "}
-              — bridging strategy and execution so founders can focus on growth instead of getting
+              <span className="text-foreground font-medium">senior product leader and operator</span>,{" "}
+              bridging strategy and execution so founders can focus on growth instead of getting
               stuck in it.
             </p>
             <a
