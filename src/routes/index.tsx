@@ -249,8 +249,9 @@ function Index() {
             className="text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight mb-8"
             style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
           >
+            Need a product leader{" "}
             <span className="italic" style={{ color: "var(--accent)" }}>
-              Need a product leader to build momentum?
+              to build momentum?
             </span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-10">
