@@ -251,7 +251,7 @@ function Index() {
           >
             Need a product leader{" "}
             <span className="italic" style={{ color: "var(--accent)" }}>
-              build momentum?
+              to build momentum?
             </span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-10">
