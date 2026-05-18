@@ -141,7 +141,7 @@ function Index() {
       </header>
 
       {/* Why founders hire me */}
-      <section className="bg-[var(--surface)] border-y border-border/60 py-24 sm:py-32">
+      <section className="bg-[var(--surface)] border-y border-border/60 py-16 sm:py-24">
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
           <div className="max-w-2xl mb-16 sm:mb-20">
             <p className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent mb-5">
