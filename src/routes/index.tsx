@@ -224,7 +224,7 @@ function Index() {
                 </p>
                 <p>
                   Outside of work I garden and play cooperative strategy games. Growing things,
-                  building toward a goal, getting the team to win — it's a theme. I'm also an AI
+                  building toward a goal, getting the team to win. It's a theme. I'm also an AI
                   tinkerer and I believe the best way to bring AI into a business is to start by
                   having fun with it, sparking curiosity before optimizing for outcomes.
                 </p>
