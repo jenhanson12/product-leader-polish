@@ -93,71 +93,49 @@ function Index() {
 
 
       {/* Hero */}
-      <header className="max-w-6xl mx-auto px-6 sm:px-8 pt-6 sm:pt-12 pb-20 sm:pb-28">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-          <div className="lg:col-span-7">
-            <div className="flex items-center gap-3 mb-8">
-              <span className="w-8 h-px bg-accent" />
-              <span className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent">
-                Fractional Product &amp; AI Leadership
-              </span>
-            </div>
-            <h1
-              className="text-[2rem] sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight mb-8 text-balance max-w-none sm:max-w-[18ch]"
-              style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
-            >
-              Turning{" "}
-              <span
-                className="italic whitespace-nowrap"
-                style={{ color: "var(--accent)" }}
-              >
-                early-stage chaos
-              </span>{" "}
-              into momentum that lasts.
-            </h1>
-            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-xl mb-10">
-              I embed with startup teams as a{" "}
-              <span className="text-foreground font-medium">senior product leader and operator</span>,{" "}
-              bridging strategy and execution so founders can focus on what matters.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="mailto:jen@hansonstrategiesllc.com"
-                className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-7 py-3.5 rounded-full text-sm font-medium tracking-wide hover:bg-accent/90 transition-colors"
-              >
-                Get in touch
-              </a>
-              <a
-                href="https://zcal.co/jenhanson"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-7 py-3.5 rounded-full text-sm font-medium tracking-wide hover:bg-accent/90 transition-colors"
-              >
-                Book a 30-min intro call
-                <span aria-hidden>↗</span>
-              </a>
-            </div>
+      <header className="max-w-6xl mx-auto px-6 sm:px-8 pt-12 sm:pt-20 pb-20 sm:pb-28">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <span className="w-8 h-px bg-accent" />
+            <span className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent">
+              Fractional Product &amp; AI Leadership
+            </span>
+            <span className="w-8 h-px bg-accent" />
           </div>
-
-          {/* Smaller headshot with soft fade + caption rule */}
-          <div className="lg:col-span-5 flex justify-center lg:justify-end mt-4 lg:mt-0">
-            <div className="relative w-[170px] sm:w-[220px] lg:w-[300px]">
-              <div className="aspect-[4/5] rounded-2xl bg-[var(--surface)] overflow-hidden">
-                <img
-                  src={jenPortrait}
-                  alt="Jen Hanson, fractional product and AI leader"
-                  loading="eager"
-                  className="w-full h-full object-cover"
-                  style={{
-                    objectPosition: "center top",
-                    WebkitMaskImage:
-                      "linear-gradient(to bottom, black 90%, transparent 100%)",
-                    maskImage:
-                      "linear-gradient(to bottom, black 90%, transparent 100%)",
-                  }}
-                />
-              </div>
-            </div>
+          <h1
+            className="text-[2rem] sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight mb-8 text-balance"
+            style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
+          >
+            Turning{" "}
+            <span
+              className="italic whitespace-nowrap"
+              style={{ color: "var(--accent)" }}
+            >
+              early-stage chaos
+            </span>{" "}
+            into momentum that lasts.
+          </h1>
+          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-xl mx-auto mb-10">
+            I embed with startup teams as a{" "}
+            <span className="text-foreground font-medium">senior product leader and operator</span>,{" "}
+            bridging strategy and execution so founders can focus on what matters.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="mailto:jen@hansonstrategiesllc.com"
+              className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-7 py-3.5 rounded-full text-sm font-medium tracking-wide hover:bg-accent/90 transition-colors"
+            >
+              Get in touch
+            </a>
+            <a
+              href="https://zcal.co/jenhanson"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-7 py-3.5 rounded-full text-sm font-medium tracking-wide hover:bg-accent/90 transition-colors"
+            >
+              Book a 30-min intro call
+              <span aria-hidden>↗</span>
+            </a>
           </div>
         </div>
       </header>
