@@ -307,7 +307,7 @@ function Index() {
               Jen Hanson
               <span className="text-muted-foreground not-italic">
                 {" "}
-                · Founder, Hanson Strategies LLC
+                · Principal, Hanson Strategies LLC
               </span>
             </p>
           </div>
