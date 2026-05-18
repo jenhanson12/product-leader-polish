@@ -190,10 +190,10 @@ function Index() {
       </section>
 
       {/* About */}
-      <section className="bg-[var(--surface)] border-y border-border/60 py-24 sm:py-32">
+      <section className="bg-[var(--surface)] border-y border-border/60 py-16 sm:py-24">
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-            <div className="lg:col-span-4 flex justify-center lg:justify-start">
+            <div className="lg:col-span-4 flex justify-center lg:justify-start self-center">
               <div className="rounded-2xl overflow-hidden bg-[var(--surface)] w-[260px]">
                 <img
                   src={jenPortrait}
