@@ -6,20 +6,26 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Hanson Strategies — Product Leadership" },
+      { title: "Hanson Strategies — Fractional Product & Operator Leadership" },
       {
         name: "description",
         content:
-          "Hanson Strategies is a fractional product leadership practice that embeds with startup teams to turn early-stage chaos into momentum that lasts.",
+          "Jen Hanson embeds with early-stage startups as a fractional product leader and operator — bridging strategy and execution so founders can focus on growth.",
       },
-      { property: "og:title", content: "Hanson Strategies — Product Leadership" },
+      { property: "og:title", content: "Hanson Strategies — Fractional Product & Operator Leadership" },
       {
         property: "og:description",
         content:
-          "Senior product thinking with operator instincts. Bridging strategy and execution for early-stage startups.",
+          "Senior product thinking. Operator instincts. Jen Hanson works with startups as an embedded fractional leader across product, ops, and AI strategy.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Hanson Strategies — Fractional Product & Operator Leadership" },
+      {
+        name: "twitter:description",
+        content:
+          "Senior product thinking. Operator instincts. Jen Hanson works with startups as an embedded fractional leader across product, ops, and AI strategy.",
+      },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),
