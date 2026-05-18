@@ -194,15 +194,11 @@ function Index() {
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             <div className="lg:col-span-4 flex justify-center lg:justify-start">
-              <div
-                className="rounded-full overflow-hidden bg-[var(--surface)]"
-                style={{ width: "240px", height: "240px" }}
-              >
+              <div className="rounded-2xl overflow-hidden bg-[var(--surface)] w-[200px]">
                 <img
                   src={jenPortrait}
                   alt="Jen Hanson"
-                  className="w-full h-full object-cover"
-                  style={{ objectPosition: "center top" }}
+                  className="w-full h-auto block"
                 />
               </div>
             </div>
