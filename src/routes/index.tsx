@@ -271,7 +271,7 @@ function Index() {
             </span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-10">
-            I work with no more than a couple clients at a time so I can be genuinely useful. If you're
+            I work with no more than a couple clients at a time so I can actually move the needle. If you're
             figuring out what to build, how to ship faster, or how to build AI into your product,
             let's have a conversation.
           </p>
