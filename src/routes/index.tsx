@@ -162,7 +162,34 @@ function Index() {
               things forward. I reduce founder decision load without losing momentum, and I get
               products and teams operational.
             </p>
+
+            <div className="mt-10 flex flex-col sm:flex-row items-center sm:items-start gap-5 sm:gap-6">
+              <div className="w-20 h-20 rounded-full overflow-hidden shrink-0 bg-[var(--surface)]">
+                <img
+                  src={jenPortrait}
+                  alt="Jen Hanson"
+                  className="w-full h-full object-cover"
+                  style={{ objectPosition: "center top" }}
+                />
+              </div>
+              <div className="text-muted-foreground leading-relaxed space-y-4 text-center sm:text-left">
+                <p>
+                  I've called Boulder home for twenty years. I'm a generalist at heart with product
+                  expertise. That lens — users, outcomes, tradeoffs — applies to pretty much
+                  everything else a startup needs. I sit between teams that don't always speak the
+                  same language and help them move together.
+                </p>
+                <p>
+                  Outside of work I garden and play cooperative strategy games. Growing things,
+                  building toward a goal, getting the team to win — it's a theme. I'm also an AI
+                  tinkerer and I believe the best way to bring AI into a business is to start by
+                  having fun with it, sparking curiosity before optimizing for outcomes.
+                </p>
+              </div>
+            </div>
           </div>
+
+
 
           <ol className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-14">
             {VALUE_PROPS.map((vp, i) => (
