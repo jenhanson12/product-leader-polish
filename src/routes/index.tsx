@@ -275,13 +275,23 @@ function Index() {
             figuring out what to build, how to ship faster, or how to build AI into your product,
             let's have a conversation.
           </p>
-          <a
-            href="mailto:jen@hansonstrategiesllc.com"
-            className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-7 py-3.5 rounded-full text-sm font-medium tracking-wide hover:bg-accent/90 transition-colors"
-          >
-            Contact Jen
-            <span aria-hidden>→</span>
-          </a>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="mailto:jen@hansonstrategiesllc.com"
+              className="inline-flex items-center gap-2 border border-foreground/30 text-foreground px-7 py-3.5 rounded-full text-sm font-medium tracking-wide hover:border-foreground hover:bg-foreground/5 transition-colors"
+            >
+              Get in touch
+            </a>
+            <a
+              href="https://zcal.co/jenhanson"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-foreground/30 text-foreground px-7 py-3.5 rounded-full text-sm font-medium tracking-wide hover:border-foreground hover:bg-foreground/5 transition-colors"
+            >
+              Book a 30-min intro call
+              <span aria-hidden>↗</span>
+            </a>
+          </div>
         </div>
       </section>
 
