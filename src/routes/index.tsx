@@ -217,9 +217,10 @@ function Index() {
               </h2>
               <div className="text-muted-foreground text-lg leading-relaxed space-y-5">
                 <p>
-                  I'm a generalist at heart with product expertise. That lens — users, outcomes,
-                  tradeoffs — applies to pretty much everything else a startup needs. I sit between
-                  teams that don't always speak the same language and help them move together.
+                  I'm a generalist at heart with product expertise. I think in terms of users,
+                  outcomes, and tradeoffs, and that applies to pretty much everything else a startup
+                  needs. I sit between teams that don't always speak the same language and help them
+                  move together.
                 </p>
                 <p>
                   Outside of work I garden and play cooperative strategy games. Growing things,
