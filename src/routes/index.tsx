@@ -93,7 +93,7 @@ function Index() {
 
 
       {/* Hero */}
-      <header className="max-w-6xl mx-auto px-6 sm:px-8 pt-12 sm:pt-20 pb-20 sm:pb-28">
+      <header className="max-w-6xl mx-auto px-6 sm:px-8 pt-10 sm:pt-16 pb-10 sm:pb-14">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center gap-3 mb-8">
             <span className="w-8 h-px bg-accent" />
