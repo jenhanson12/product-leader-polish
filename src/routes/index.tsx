@@ -93,7 +93,7 @@ function Index() {
 
 
       {/* Hero */}
-      <header className="max-w-6xl mx-auto px-6 sm:px-8 pt-10 sm:pt-16 pb-10 sm:pb-14">
+      <header className="max-w-6xl mx-auto px-6 sm:px-8 pt-10 sm:pt-16 pb-8 sm:pb-12">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center gap-3 mb-8">
             <span className="w-8 h-px bg-accent" />
@@ -190,11 +190,11 @@ function Index() {
       </section>
 
       {/* About */}
-      <section className="py-24 sm:py-32">
+      <section className="bg-[var(--surface)] border-y border-border/60 py-24 sm:py-32">
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             <div className="lg:col-span-4 flex justify-center lg:justify-start">
-              <div className="rounded-2xl overflow-hidden bg-[var(--surface)] w-[200px]">
+              <div className="rounded-2xl overflow-hidden bg-[var(--surface)] w-[260px]">
                 <img
                   src={jenPortrait}
                   alt="Jen Hanson"
