@@ -162,34 +162,7 @@ function Index() {
               things forward. I reduce founder decision load without losing momentum, and I get
               products and teams operational.
             </p>
-
-            <div className="mt-10 flex flex-col sm:flex-row items-center sm:items-start gap-5 sm:gap-6">
-              <div className="w-20 h-20 rounded-full overflow-hidden shrink-0 bg-[var(--surface)]">
-                <img
-                  src={jenPortrait}
-                  alt="Jen Hanson"
-                  className="w-full h-full object-cover"
-                  style={{ objectPosition: "center top" }}
-                />
-              </div>
-              <div className="text-muted-foreground leading-relaxed space-y-4 text-center sm:text-left">
-                <p>
-                  I've called Boulder home for twenty years. I'm a generalist at heart with product
-                  expertise. That lens — users, outcomes, tradeoffs — applies to pretty much
-                  everything else a startup needs. I sit between teams that don't always speak the
-                  same language and help them move together.
-                </p>
-                <p>
-                  Outside of work I garden and play cooperative strategy games. Growing things,
-                  building toward a goal, getting the team to win — it's a theme. I'm also an AI
-                  tinkerer and I believe the best way to bring AI into a business is to start by
-                  having fun with it, sparking curiosity before optimizing for outcomes.
-                </p>
-              </div>
-            </div>
           </div>
-
-
 
           <ol className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-14">
             {VALUE_PROPS.map((vp, i) => (
@@ -216,8 +189,58 @@ function Index() {
         </div>
       </section>
 
+      {/* About */}
+      <section className="py-24 sm:py-32">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+            <div className="lg:col-span-4 flex justify-center lg:justify-start">
+              <div
+                className="rounded-full overflow-hidden bg-[var(--surface)]"
+                style={{ width: "240px", height: "240px" }}
+              >
+                <img
+                  src={jenPortrait}
+                  alt="Jen Hanson"
+                  className="w-full h-full object-cover"
+                  style={{ objectPosition: "center top" }}
+                />
+              </div>
+            </div>
+            <div className="lg:col-span-8">
+              <p className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent mb-5">
+                About
+              </p>
+              <h2
+                className="text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-8"
+                style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
+              >
+                A little{" "}
+                <span className="italic" style={{ color: "var(--accent)" }}>
+                  about me.
+                </span>
+              </h2>
+              <div className="text-muted-foreground text-lg leading-relaxed space-y-5">
+                <p>
+                  I've called Boulder home for twenty years. I'm a generalist at heart with product
+                  expertise. That lens — users, outcomes, tradeoffs — applies to pretty much
+                  everything else a startup needs. I sit between teams that don't always speak the
+                  same language and help them move together.
+                </p>
+                <p>
+                  Outside of work I garden and play cooperative strategy games. Growing things,
+                  building toward a goal, getting the team to win — it's a theme. I'm also an AI
+                  tinkerer and I believe the best way to bring AI into a business is to start by
+                  having fun with it, sparking curiosity before optimizing for outcomes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Community & Speaking */}
-      <section className="max-w-6xl mx-auto px-6 sm:px-8 py-24 sm:py-32">
+      <section className="bg-[var(--surface)] border-y border-border/60">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 py-24 sm:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
           <div className="lg:col-span-4">
             <p className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent">
@@ -258,10 +281,11 @@ function Index() {
             </p>
           </div>
         </div>
+        </div>
       </section>
 
       {/* Contact */}
-      <section className="bg-[var(--surface)] border-y border-border/60 py-24 sm:py-32">
+      <section className="py-24 sm:py-32 border-t border-border/60">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
           <p className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent mb-5">
             Let's talk
