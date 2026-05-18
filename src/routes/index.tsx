@@ -281,10 +281,11 @@ function Index() {
             </p>
           </div>
         </div>
+        </div>
       </section>
 
       {/* Contact */}
-      <section className="bg-[var(--surface)] border-y border-border/60 py-24 sm:py-32">
+      <section className="py-24 sm:py-32 border-t border-border/60">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
           <p className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent mb-5">
             Let's talk
