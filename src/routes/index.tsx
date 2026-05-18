@@ -235,8 +235,8 @@ function Index() {
       </section>
 
       {/* Community & Speaking */}
-      <section className="bg-[var(--surface)] border-y border-border/60">
-      <div className="max-w-6xl mx-auto px-6 sm:px-8 py-24 sm:py-32">
+      <section className="bg-background border-t border-border/60">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 py-16 sm:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
           <div className="lg:col-span-4">
             <p className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent">
