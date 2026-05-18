@@ -93,7 +93,7 @@ function Index() {
 
 
       {/* Hero */}
-      <header className="max-w-6xl mx-auto px-6 sm:px-8 pt-12 sm:pt-20 pb-20 sm:pb-28">
+      <header className="max-w-6xl mx-auto px-6 sm:px-8 pt-10 sm:pt-16 pb-10 sm:pb-14">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center gap-3 mb-8">
             <span className="w-8 h-px bg-accent" />
@@ -194,15 +194,11 @@ function Index() {
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             <div className="lg:col-span-4 flex justify-center lg:justify-start">
-              <div
-                className="rounded-full overflow-hidden bg-[var(--surface)]"
-                style={{ width: "240px", height: "240px" }}
-              >
+              <div className="rounded-2xl overflow-hidden bg-[var(--surface)] w-[200px]">
                 <img
                   src={jenPortrait}
                   alt="Jen Hanson"
-                  className="w-full h-full object-cover"
-                  style={{ objectPosition: "center top" }}
+                  className="w-full h-auto block"
                 />
               </div>
             </div>
