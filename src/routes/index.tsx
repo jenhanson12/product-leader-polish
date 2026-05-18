@@ -190,7 +190,7 @@ function Index() {
       </section>
 
       {/* About */}
-      <section className="bg-[var(--surface)] border-y border-border/60 py-16 sm:py-24">
+      <section className="bg-background py-16 sm:py-24">
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             <div className="lg:col-span-4 flex justify-center lg:justify-start self-center">
