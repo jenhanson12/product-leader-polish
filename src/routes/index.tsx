@@ -113,7 +113,7 @@ function Index() {
             >
               early-stage chaos
             </span>{" "}
-            into momentum that lasts.
+            into forward momentum.
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-xl mx-auto mb-10">
             I embed with startup teams as a{" "}
