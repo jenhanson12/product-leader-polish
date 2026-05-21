@@ -72,18 +72,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Product Leader Polish is a website builder for fractional product leaders seeking a modern, elegant online presence." },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Product Leader Polish is a website builder for fractional product leaders seeking a modern, elegant online presence." },
+      { title: "Hanson Strategies — Fractional Product & Operator Leadership" },
+      { name: "description", content: "Jen Hanson embeds with early-stage startups as a fractional product leader and operator — bridging strategy and execution so founders can focus on growth." },
+      { name: "author", content: "Jen Hanson" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Lovable App" },
-      { name: "twitter:description", content: "Product Leader Polish is a website builder for fractional product leaders seeking a modern, elegant online presence." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3a6cd493-6f55-47fe-a3e8-73c5b88d4043/id-preview-bb5eaf00--b8e39420-ab3a-442a-8395-2b74c1b9fcd0.lovable.app-1778795381331.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3a6cd493-6f55-47fe-a3e8-73c5b88d4043/id-preview-bb5eaf00--b8e39420-ab3a-442a-8395-2b74c1b9fcd0.lovable.app-1778795381331.png" },
     ],
     links: [
       {
