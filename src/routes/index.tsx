@@ -19,7 +19,8 @@ export const Route = createFileRoute("/")({
           "Senior product thinking. Operator instincts. Jen Hanson works with startups as an embedded fractional leader across product, ops, and AI strategy.",
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: "https://hansonstrategiesllc.com" },
+      { name: "twitter:card", content: "summary" },
       { name: "twitter:title", content: "Hanson Strategies — Fractional Product & Operator Leadership" },
       {
         name: "twitter:description",
