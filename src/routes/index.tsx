@@ -1,6 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import jenPortrait from "@/assets/jen-portrait.png";
 import logoMark from "@/assets/hanson-logo.png";
+import ogImage from "@/assets/og-image.jpg";
+
+const SITE_URL = "https://hansonstrategiesllc.com";
+const OG_IMAGE_URL = new URL(ogImage, SITE_URL).href;
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -19,18 +23,28 @@ export const Route = createFileRoute("/")({
           "Senior product thinking. Operator instincts. Jen Hanson works with startups as an embedded fractional leader across product, ops, and AI strategy.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://hansonstrategiesllc.com" },
-      { name: "twitter:card", content: "summary" },
+      { property: "og:url", content: SITE_URL },
+      { property: "og:image", content: OG_IMAGE_URL },
+      { property: "og:image:width", content: "1216" },
+      { property: "og:image:height", content: "640" },
+      {
+        property: "og:image:alt",
+        content: "Hanson Strategies — Turning early-stage chaos into forward momentum.",
+      },
+      { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Hanson Strategies — Fractional Product & Operator Leadership" },
       {
         name: "twitter:description",
         content:
           "Senior product thinking. Operator instincts. Jen Hanson works with startups as an embedded fractional leader across product, ops, and AI strategy.",
       },
+      { name: "twitter:image", content: OG_IMAGE_URL },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: SITE_URL }],
   }),
 });
+
+
 
 const VALUE_PROPS = [
   {
