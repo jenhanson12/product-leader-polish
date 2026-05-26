@@ -1,6 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import jenPortrait from "@/assets/jen-portrait.png";
 import logoMark from "@/assets/hanson-logo.png";
+import ogImage from "@/assets/og-image.jpg";
+
+const SITE_URL = "https://hansonstrategiesllc.com";
+const OG_IMAGE_URL = new URL(ogImage, SITE_URL).href;
 
 export const Route = createFileRoute("/")({
   component: Index,
