@@ -1,13 +1,32 @@
-## Changes to `src/routes/index.tsx`
+## Goal
+Replace the outdated LinkedIn preview image with a new, branded Open Graph share image for hansonstrategiesllc.com.
 
-### 1. About section — portrait crop
-Replace the fixed 240x240 circular container with a natural-aspect rounded rectangle:
-- Container: `w-[200px]` (no fixed height), `rounded-2xl` (~16px) `overflow-hidden bg-[var(--surface)]`.
-- `<img>`: `w-full h-auto block` so the image keeps its natural aspect ratio; drop `object-cover` and the forced height.
-- Keep the left column wrapper, but change `items-center` on the grid so the photo column is vertically centered against the bio text (already `items-center` — verify it stays).
+## Steps
 
-### 2. Hero — reduce vertical padding
-- Current: `pt-12 sm:pt-20 pb-20 sm:pb-28`.
-- New: `pt-10 sm:pt-16 pb-10 sm:pb-14` to tighten the gap between CTAs and the next section.
+1. **Generate a branded OG image** (1200×630, the standard OG size)
+   - Warm cream background (`#fcfaf6`) matching the site
+   - Headline in serif: "Turning early-stage chaos into forward momentum." with "early-stage chaos" in italic terracotta (`#b06246`)
+   - Subtext: "Jen Hanson — Fractional Product & Operator Leadership"
+   - Small Hanson Strategies logo mark
+   - Save to `src/assets/og-image.jpg`
 
-No other changes.
+2. **Wire it into the site metadata**
+   - In `src/routes/index.tsx`, import the new image and add:
+     - `<meta property="og:image" content="...absolute URL..." />`
+     - `<meta property="og:image:width" content="1200" />`
+     - `<meta property="og:image:height" content="630" />`
+     - `<meta property="og:image:alt" content="Hanson Strategies — Fractional Product & Operator Leadership" />`
+     - Change `twitter:card` from `summary` to `summary_large_image` (in __root.tsx) and add `twitter:image`
+   - Use an absolute URL (required by LinkedIn/Facebook/Twitter crawlers) — build it from the production domain `https://hansonstrategiesllc.com` + the hashed asset path Vite emits
+
+3. **After you publish**, re-scrape the cache so LinkedIn/etc. pick up the new image:
+   - LinkedIn Post Inspector: https://www.linkedin.com/post-inspector/
+   - Facebook Sharing Debugger: https://developers.facebook.com/tools/debug/
+   - Twitter Card Validator (or just paste in a tweet)
+   - These are required — social platforms aggressively cache the old image for days/weeks, and the only way to force a refresh is to click "Inspect/Scrape Again" on their tools.
+
+## Important caveat
+The image won't go live until you click **Publish → Update** in Lovable. After that, LinkedIn will still show the cached old image until you re-run the Post Inspector on your URL. That's the step that was likely missing before — code changes alone don't bust LinkedIn's cache.
+
+## Open question
+Do you want me to design the OG image around the headline (option above), or would you prefer it to feature Jen's portrait + name (more personal, looks more like a business card)?
