@@ -39,6 +39,12 @@ export const Route = createFileRoute("/")({
           "Senior product thinking. Operator instincts. Jen Hanson works with startups as an embedded fractional leader across product, ops, and AI strategy.",
       },
       { name: "twitter:image", content: OG_IMAGE_URL },
+    ],
+    links: [{ rel: "canonical", href: SITE_URL }],
+  }),
+});
+
+
 
 const VALUE_PROPS = [
   {
