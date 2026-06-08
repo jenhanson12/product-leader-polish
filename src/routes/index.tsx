@@ -10,17 +10,17 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Hanson Strategies — Fractional Product & Operator Leadership" },
+      { title: "Hanson Strategies — Jen Hanson, Product & Operator Leader" },
       {
         name: "description",
         content:
-          "Jen Hanson embeds with early-stage startups as a fractional product leader and operator — bridging strategy and execution so founders can focus on growth.",
+          "Jen Hanson is a senior product leader and operator with deep experience across AI, FinTech, EdTech, and early-stage startups. Not currently taking on new clients, but happy to connect you with someone in her network.",
       },
-      { property: "og:title", content: "Hanson Strategies — Fractional Product & Operator Leadership" },
+      { property: "og:title", content: "Hanson Strategies — Jen Hanson, Product & Operator Leader" },
       {
         property: "og:description",
         content:
-          "Senior product thinking. Operator instincts. Jen Hanson works with startups as an embedded fractional leader across product, ops, and AI strategy.",
+          "Jen Hanson is a senior product leader and operator with deep experience across AI, FinTech, EdTech, and early-stage startups. Not currently taking on new clients, but happy to connect you with someone in her network.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: SITE_URL },
@@ -32,11 +32,11 @@ export const Route = createFileRoute("/")({
         content: "Hanson Strategies — Turning early-stage chaos into forward momentum.",
       },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Hanson Strategies — Fractional Product & Operator Leadership" },
+      { name: "twitter:title", content: "Hanson Strategies — Jen Hanson, Product & Operator Leader" },
       {
         name: "twitter:description",
         content:
-          "Senior product thinking. Operator instincts. Jen Hanson works with startups as an embedded fractional leader across product, ops, and AI strategy.",
+          "Jen Hanson is a senior product leader and operator with deep experience across AI, FinTech, EdTech, and early-stage startups. Not currently taking on new clients, but happy to connect you with someone in her network.",
       },
       { name: "twitter:image", content: OG_IMAGE_URL },
     ],
@@ -96,12 +96,6 @@ function Index() {
           >
             LinkedIn
           </a>
-          <a
-            href="mailto:jen@hansonstrategiesllc.com"
-            className="text-foreground hover:text-accent transition-colors border-b border-accent/40 hover:border-accent pb-0.5"
-          >
-            Get in touch
-          </a>
         </div>
       </nav>
       </div>
@@ -130,26 +124,20 @@ function Index() {
             </span>{" "}
             into forward momentum.
           </h1>
-          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-xl mx-auto mb-10">
-            I embed with startup teams as a{" "}
-            <span className="text-foreground font-medium">senior product leader and operator</span>,{" "}
-            bridging strategy and execution so founders can focus on what matters.
+          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
+            I'm a{" "}
+            <span className="text-foreground font-medium">senior product leader and operator</span>{" "}
+            who embeds with startup teams to bridge strategy and execution. I'm not currently
+            available for new engagements — but if you need someone with this skill set, I'm happy
+            to make a warm introduction.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="mailto:jen@hansonstrategiesllc.com"
               className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-7 py-3.5 rounded-full text-sm font-medium tracking-wide hover:bg-accent/90 transition-colors"
             >
-              Get in touch
-            </a>
-            <a
-              href="https://zcal.co/jenhanson"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-7 py-3.5 rounded-full text-sm font-medium tracking-wide hover:bg-accent/90 transition-colors"
-            >
-              Book a 30-min intro call
-              <span aria-hidden>↗</span>
+              Reach out for a referral
+              <span aria-hidden>→</span>
             </a>
           </div>
         </div>
@@ -160,7 +148,7 @@ function Index() {
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
           <div className="max-w-2xl mb-16 sm:mb-20">
             <p className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent mb-5">
-              Why founders hire me
+              What I bring to the table
             </p>
             <h2
               className="text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight"
@@ -306,31 +294,23 @@ function Index() {
             className="text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight mb-8"
             style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
           >
-            Need a product leader who can{" "}
+            Looking for{" "}
             <span className="italic" style={{ color: "var(--accent)" }}>
-              build momentum?
+              someone like me?
             </span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-10">
-            I work with no more than a couple clients at a time so that I have real impact. If you're
-            figuring out what to build, how to ship faster, or how to build AI into your product,
-            let's have a conversation.
+            I'm not currently taking on new clients — I've moved into a full-time role. But I know
+            great people. If you're looking for a fractional product leader or operator with a
+            similar background, reach out and I'll connect you with someone in my network.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="mailto:jen@hansonstrategiesllc.com"
               className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-7 py-3.5 rounded-full text-sm font-medium tracking-wide hover:bg-accent/90 transition-colors"
             >
-              Get in touch
-            </a>
-            <a
-              href="https://zcal.co/jenhanson"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-7 py-3.5 rounded-full text-sm font-medium tracking-wide hover:bg-accent/90 transition-colors"
-            >
-              Book a 30-min intro call
-              <span aria-hidden>↗</span>
+              Request a referral
+              <span aria-hidden>→</span>
             </a>
           </div>
         </div>

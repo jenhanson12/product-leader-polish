@@ -72,8 +72,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Hanson Strategies — Fractional Product & Operator Leadership" },
-      { name: "description", content: "Jen Hanson embeds with early-stage startups as a fractional product leader and operator — bridging strategy and execution so founders can focus on growth." },
+      { title: "Hanson Strategies — Jen Hanson, Product & Operator Leader" },
+      { name: "description", content: "Jen Hanson is a senior product leader and operator with deep experience across AI, FinTech, EdTech, and early-stage startups. Not currently taking on new clients, but happy to connect you with someone in her network." },
       { name: "author", content: "Jen Hanson" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

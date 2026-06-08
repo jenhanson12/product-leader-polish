@@ -1,18 +1,35 @@
-Plan to fix the typography mismatch:
+## Plan
 
-1. Match the original font stack and loading
-   - Keep the serif display face as Cormorant Garamond and the body/nav face as Inter.
-   - Make the font import/load order safe so the browser is actually applying those fonts, not falling back.
-   - Add global smoothing and base body font settings so the rendered weight matches the live-site screenshot more closely.
+Update all homepage copy to reflect that Jen is no longer taking new clients and is happy to make warm introductions instead. All changes are text-only replacements in `src/routes/index.tsx` and metadata in `src/routes/__root.tsx`.
 
-2. Restore the original headline rhythm
-   - Adjust the homepage headline sizing, max-width, line-height, and wrapping so the hero reads like the reference screenshot instead of the current oversized/two-line preview.
-   - Keep the serif headline weight at the heavier live-site feel, but tune italic spans separately if needed so “early-stage chaos”, “Operator instincts”, and similar italic phrases match the reference.
+### Changes
 
-3. Restore supporting text proportions
-   - Reduce the body/intro copy from the current larger Tailwind sizing where it no longer matches the screenshot.
-   - Align h2/h3 weights, section eyebrow labels, nav tracking, and button text sizing with the original visual proportions.
+1. **Page Title & Meta Tags** (`src/routes/index.tsx` + `__root.tsx`)
+   - Title: "Hanson Strategies — Jen Hanson, Product & Operator Leader"
+   - Description, og:description, twitter:description: "Jen Hanson is a senior product leader and operator with deep experience across AI, FinTech, EdTech, and early-stage startups. Not currently taking on new clients, but happy to connect you with someone in her network."
+   - og:title, twitter:title: match new title
 
-4. Verify against the screenshot
-   - Re-open the preview at the same viewport and compare the hero, first section, and supporting text hierarchy against the provided reference.
-   - Only change typography/layout proportions needed for the match; leave the already-requested content/CTA/meta changes alone unless they are still pending in the file.
+2. **Nav Bar**
+   - Remove the "Get in touch" link. Keep only LinkedIn.
+
+3. **Hero Section**
+   - Keep headline: "Turning early-stage chaos into forward momentum."
+   - Subhead: update to referral language.
+   - CTAs: replace both buttons with single "Reach out for a referral →" mailto link. Remove Zcal link.
+
+4. **"Why Founders Hire Me" Section**
+   - Rename header eyebrow from "Why founders hire me" to "What I bring to the table"
+   - Keep all four capability cards unchanged.
+
+5. **"Let's Talk" CTA Section**
+   - Headline: "Looking for someone like me?"
+   - Body: update to explain she's moved to a full-time role and can make introductions.
+   - CTAs: single "Request a referral →" mailto link. Remove Zcal link.
+
+6. **Footer**
+   - No changes needed.
+
+### Technical Details
+- All edits are inline text replacements in `src/routes/index.tsx`.
+- `__root.tsx` meta title/description also updated for consistency.
+- No new dependencies, no visual design changes, no routing changes.
