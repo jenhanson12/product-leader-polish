@@ -299,9 +299,11 @@ function Index() {
               someone like me?
             </span>
           </h2>
+          <p className="text-muted-foreground text-lg leading-relaxed mb-10">
             I'm not currently taking on new clients, but I know great people. If you're
             looking for a fractional product leader or operator with a similar background, reach
             out and I'll connect you with someone in my network.
+          </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="mailto:jen@hansonstrategiesllc.com"
