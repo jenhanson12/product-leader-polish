@@ -123,7 +123,7 @@ function Index() {
           >
             Turning{" "}
             <span
-              className="italic whitespace-nowrap"
+              className="italic"
               style={{ color: "var(--accent)" }}
             >
               early-stage chaos
