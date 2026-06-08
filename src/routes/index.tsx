@@ -128,7 +128,7 @@ function Index() {
             I'm a{" "}
             <span className="text-foreground font-medium">senior product leader and operator</span>{" "}
             who embeds with startup teams to bridge strategy and execution. I'm not currently
-            available for new engagements — but if you need someone with this skill set, I'm happy
+            available for new engagements, but if you need someone with this skill set, I'm happy
             to make a warm introduction.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
