@@ -118,8 +118,8 @@ function Index() {
             <span className="w-8 h-px bg-accent" />
           </div>
           <h1
-            className="text-[2rem] sm:text-5xl lg:text-7xl xl:text-7xl leading-[1.05] tracking-tight mb-8 text-balance"
-            style={{ fontFamily: "var(--font-serif)", fontWeight: 600 }}
+            className="text-[2rem] sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight mb-8 text-balance"
+            style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
           >
             Turning{" "}
             <span
@@ -164,7 +164,7 @@ function Index() {
             </p>
             <h2
               className="text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight"
-              style={{ fontFamily: "var(--font-serif)", fontWeight: 600 }}
+              style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
             >
               Senior product thinking.{" "}
               <span className="italic" style={{ color: "var(--accent)" }}>
@@ -223,7 +223,7 @@ function Index() {
               </p>
               <h2
                 className="text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-8"
-                style={{ fontFamily: "var(--font-serif)", fontWeight: 600 }}
+                style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
               >
                 A little{" "}
                 <span className="italic" style={{ color: "var(--accent)" }}>
@@ -270,7 +270,7 @@ function Index() {
           <div className="lg:col-span-8">
             <h2
               className="text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-8"
-              style={{ fontFamily: "var(--font-serif)", fontWeight: 600 }}
+              style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
             >
             Active in the local{" "}
             <span className="italic" style={{ color: "var(--accent)" }}>
@@ -304,7 +304,7 @@ function Index() {
           </p>
           <h2
             className="text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight mb-8"
-            style={{ fontFamily: "var(--font-serif)", fontWeight: 600 }}
+            style={{ fontFamily: "var(--font-serif)", fontWeight: 300 }}
           >
             Need a product leader who can{" "}
             <span className="italic" style={{ color: "var(--accent)" }}>
