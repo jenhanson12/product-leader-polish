@@ -48,7 +48,7 @@ export const Route = createFileRoute("/")({
 
 const VALUE_PROPS = [
   {
-    title: "Force Multiplier, Not Overhead",
+    title: "Force Multiplier",
     body: "I absorb execution across product, ops, and AI strategy so CEOs can focus on growth. I take ownership of whatever the team needs, from strategy to execution to tooling.",
   },
   {
