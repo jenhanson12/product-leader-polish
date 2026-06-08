@@ -107,7 +107,7 @@ function Index() {
           <div className="flex items-center justify-center gap-3 mb-8">
             <span className="w-8 h-px bg-accent" />
             <span className="text-[11px] uppercase tracking-[0.22em] font-semibold text-accent">
-              Fractional Product &amp; AI Leadership
+              PRODUCT &amp; AI LEADERSHIP
             </span>
             <span className="w-8 h-px bg-accent" />
           </div>
